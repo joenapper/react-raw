@@ -20,7 +20,7 @@ const Pagination = ({
             className="page-link"
             type="button"
             disabled={currentPage === 1}
-            aria-label={`Go To Page ${currentPage - 1}`}
+            aria-label={`Go To Previous Page - Page ${currentPage - 1}`}
             onClick={() => paginate(currentPage - 1)}
           >
             Previous
@@ -30,7 +30,6 @@ const Pagination = ({
         {pageNumbers.map((number) => (
           <li key={number}>
             <button
-              key={number}
               className={
                 currentPage === number ? "active page-link" : "page-link"
               }
@@ -49,7 +48,7 @@ const Pagination = ({
             className="page-link"
             type="button"
             disabled={currentPage === pageNumbers.length}
-            aria-label={`Go To Page ${currentPage + 1}`}
+            aria-label={`Go To Next Page - Page ${currentPage + 1}`}
             onClick={() => paginate(currentPage + 1)}
           >
             Next
