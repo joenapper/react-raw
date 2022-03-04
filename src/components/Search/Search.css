@@ -1,0 +1,25 @@
+.card h2 {
+  color: rgb(46, 92, 192);
+}
+
+.search-wrapper input {
+  padding: 0.5rem;
+  border: 2px solid rgb(54, 108, 226);
+  outline: none;
+  width: 90%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.search-wrapper button {
+  padding: calc(0.5rem + 2px);
+  background: rgb(54, 108, 226);
+  color: #fff;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.search-wrapper button:hover {
+  background: rgb(46, 92, 192);
+}
